@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>کارزار قصاص محمدامین کنشلو</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="glass">
+    <div class="leaf">-بهراد</div>
+    <h1>کارزار قصاص محمدامین کنشلو</h1>
+    <p class="subtitle">با این کار شایسته، از علیرضا احمدیان حمایت کنید</p>
+
+    <button class="sign-button" id="openModal">امضا کنید</button>
+
+    <div class="counter">
+      تاکنون
+      <strong id="count">—</strong>
+      نفر ثبت کرده‌اند
+    </div>
+    <p class="status" id="status"></p>
+  </main>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true">
+      <button class="x" id="closeModal" aria-label="بستن">×</button>
+      <h2>ثبت امضا</h2>
+      <p>نام خود را وارد کنید</p>
+
+      <input id="name" type="text" maxlength="80" autocomplete="name"
+             placeholder="نام شما">
+
+      <button class="submit" id="submit">ثبت امضا</button>
+      <p class="message" id="message"></p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
